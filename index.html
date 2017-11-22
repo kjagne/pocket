@@ -72,24 +72,27 @@
         <h2>Upload Doge</h2>
         <input type="text" id="imageCaption" placeholder="Write a Caption">
         <label class="upload-group">
-          Upload File
+          Upload File<img src="" width="100" height="200">
           <input type="file" class="upload-group" id="file">
         </label>
         <button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">SUBMIT</button>
       </div>
     </div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  <script>    
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDzXP5nlRP_7OxexYp-9dliTXl0VJSH35k",
-      authDomain: "project-8320625648884342045.firebaseapp.com",
-      databaseURL: "https://project-8320625648884342045.firebaseio.com",
-      storageBucket: "project-8320625648884342045.appspot.com",
-    };
-    firebase.initializeApp(config);
-  </script>
+  
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCHr6O0toSnV-4tjewCzTDxaj5RxUJLMw0",
+    authDomain: "text-ma.firebaseapp.com",
+    databaseURL: "https://text-ma.firebaseio.com",
+    projectId: "text-ma",
+    storageBucket: "text-ma.appspot.com",
+    messagingSenderId: "975412556304"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Bootstrap core JavaScript
   ================================================== -->
