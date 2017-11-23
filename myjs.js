@@ -57,7 +57,7 @@ $("#file").on("change", function(event) {
 function uploadFile() {
 	// Create a root reference
 	var filename = selectedFile.name;
-	var storageRef = firebase.storage().ref('/images/' + filename);
+	var storageRef = firebase.storage().ref('/dogImages/' + filename);
 	var uploadTask = storageRef.put(selectedFile);
 
 	// Register three observers:
