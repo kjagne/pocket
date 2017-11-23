@@ -22,7 +22,7 @@ function queryDatabase(token) {
       if (i % 3 == 0) {
         currentRow = document.createElement("div");
         $(currentRow).addClass("row");
-        $("#contentHolder" || "#contentHolderHome").append(currentRow);
+        $("#contentHolder"  && "#contentHolderHome" && "#contentHolderHome1").append(currentRow);
       }
       var col = document.createElement("div");
       $(col).addClass("col-lg-4");
