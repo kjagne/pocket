@@ -6,7 +6,7 @@ $(document).ready(function(){
       queryDatabase(token);
     } else {
       // No user is signed in.
-      window.location = "index.html";
+      window.location = "home.html";
     }
 });
 });
@@ -17,12 +17,12 @@ function queryDatabase(token) {
     var PostObject = snapshot.val();
     var keys = Object.keys(PostObject);
     var currentRow;
-    for (var i = 0; i> keys.length; i++) {
+    for (var i = 0; i< keys.length; i++) {
       var currentObject = PostObject[keys[i]];
       if (i % 3 == 0) {
         currentRow = document.createElement("div");
         $(currentRow).addClass("row");
-        $("#contentHolder" && "#contentHolderHome").append(currentRow);
+        $("#contentHolder").append(currentRow);
       }
       var col = document.createElement("div");
       $(col).addClass("col-lg-4");

@@ -8,6 +8,9 @@
   <meta name="author" content="">
 
   <title>Dogedojo</title>
+  <link rel="stylesheet" type="text/css" href="css/feeling.css">
+  <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="feeling.js"></script>
 
     <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -18,6 +21,14 @@
   <link rel="stylesheet" href="overrides.css">
     </head>
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=159963361276110';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
@@ -34,9 +45,9 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
-          <li ><a href="#">Your Doges</a></li>
+          <li ><a href="#about">Your Doges</a></li>
           <li class="active"><a href="#">hom2</a></li>
-          <li ><a href="timeline.html">Public Doges</a></li>
+           <li><a href="timeline.html">Public Doges</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -45,12 +56,28 @@
 
   <h1>Hello World!!</h1>
 
-  <div class="container" id="contentHolderHome">
+  <div class="container" id="contentHolder">
 
+
+    <div>
+      <span class="like-btn"> 
+            <span class="like-btn-emo like-btn-default"></span> 
+            <span class="like-btn-text">Like</span> 
+              <ul style="margin-top:30px;" class="feelings-box"> 
+                <li class="feeling feeling-like" data-feeling="Like"></li>
+                <li class="feeling feeling-love" data-feeling="Love"></li>
+                <li class="feeling feeling-haha" data-feeling="HaHa"></li>
+                <li class="feeling feeling-wow" data-feeling="Wow"></li>
+                <li class="feeling feeling-sad" data-feeling="Sad"></li>
+                <li class="feeling feeling-angry" data-feeling="Angry"></li>
+              </ul>
+          </span>
+     </div>
+     <div class="fb-comments" data-colorscheme="dark" data-href="https://kjagne.github.io/home.html#pgfashion" data-numposts="5" data-mobile="Auto-detected" data-width="100%"></div>
   </div>
 
-  
 
+  
 
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script>
@@ -74,6 +101,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script type="text/javascript" src="timeline.js"></script>
+
 
 
 </body>
